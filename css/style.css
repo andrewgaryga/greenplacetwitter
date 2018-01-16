@@ -83,7 +83,7 @@ header h1 {
 header h2 {
 	font-family: 'Dosis', sans-serif;
 	color: #fff;
-	font-size: 70px;
+	font-size: 50px;
 	font-weight: 600;
 }
 
@@ -94,7 +94,11 @@ header h2 {
     padding-right: 10px;
     vertical-align: top;
     font-size: 17px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+.twitter-feed {
+	margin-top: 20px;
 }
 
 footer {
@@ -196,17 +200,35 @@ p.slogan {
 	text-align: center;
 }
 
+.contact-info .non-visible { 
+	visibility: hidden;
+}
+
 .navbar-header {
 	float: left;
 }
 
 .navbar-right {
-	float: right;
+	float: none;
+	text-align: center;
 }
+
 .navbar-right img {
 	display: none;
 }
+
+@media (min-width: 390px) {
+	.twitter-text {
+		margin-bottom: 40px;
+	}
+	.twitter-feed {
+		margin-top: 0;
+	}
+}
 @media (min-width: 480px) {
+/*	header h2 {
+		font-size: 50px;
+	}*/
 	.navbar-right img {
 		display: inline-block;
 	}
@@ -281,6 +303,13 @@ p.slogan {
 }
 
 @media (min-width: 992px) {
+	.navbar-right {
+		float: right;
+		text-align: initial;
+	}
+	header h2 {
+		font-size: 70px;
+	}
 	footer .footer-above h2 {
 		font-size: 30px;
 	}
@@ -294,6 +323,35 @@ p.slogan {
 	.footer-above img {
 		width: 185px;
 	}
+}
 
+@media (min-width: 1200px) {
+	footer .footer-above {
+	    padding-top: 25px;
+	    margin-bottom: 25px;
+	}
+	footer .footer-below {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
+	header {
+		height: calc(100vh - 209px);
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	footer .footer-above {
+	    padding-top: 50px;
+	    margin-bottom: 50px;
+	}
+	footer .footer-below {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	header {
+		height: calc(100vh - 219px);
+		min-height: 600px;
+	}
 }
 
